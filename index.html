@@ -348,6 +348,71 @@
   </section>
 
 
+          <section class="section">
+    <div class="container">
+
+      <!-- Results -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-3">Results</h2>
+          <div class="content has-text-justified">
+            <p>
+              In our study, we utilize both demographic and assessment-based features to
+              predict the specified target in word identification or word attack tasks.
+              we extensively benchmark diverse ML approaches that can be used for predicting
+              early childhood education students’ reading performance.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Visualization Section -->
+            <div class="columns is-centered has-text-centered">
+                    <div class="column">
+                        <img src="./resources/results.png" style="width:80%;" alt="School-level Features Visualization" />
+                      <div class="columns is-centered has-text-justified">
+                          <div class="column is-two-thirds">
+                        <p>Results on the Large-Scale ECRI Dataset. We report model performance for the two main
+                        reading skill prediction tasks over different generalization settings. School-split enforces disjoint
+                        schools in training and testing, while student-split allows students within the same school to be in the
+                        training and testing split. Model performances are shown for the entire set of test students and over
+                        the intervention subset (received additional instruction time). The best results are shown in blue and 
+                        the second best result is shown in green.
+                        </p>
+                          </div>
+                      </div>
+                    </div>
+            </div>
+
+          <div class="columns is-centered has-text-centered">
+                    <div class="column">
+                        <img src="./resources/tsne.png" style="width:80%;" alt="School-level Features Visualization" />
+                      <div class="columns is-centered has-text-justified">
+                          <div class="column is-two-thirds">
+                        <p>Visualization of t-SNE-based Embedding and Student Profile Analysis. The visualization uses embeddings derived from the MLP (left) and MaskMLP (right) models for the word identification task, with negative samples shaded in gray and positive samples shaded in green. The pre-training step in MaskMLP results in an embedding with greater separation among student profiles.
+                        </p>
+                          </div>
+                      </div>
+                    </div>
+            </div>
+
+          <div class="columns is-centered has-text-centered">
+                    <div class="column">
+                        <img src="./resources/feimportance.png" style="width:80%;" alt="School-level Features Visualization" />
+                      <div class="columns is-centered has-text-justified">
+                          <div class="column is-two-thirds">
+                        <p>
+                          Visulization of Feature Importance on Word Identification Task. Left: feature importance of MaskMLP; Right: feature importance of XGBoost.
+                        </p>
+                          </div>
+                      </div>
+                    </div>
+            </div>
+    </div>
+    <div class="container">
+  </section>
+
+
 
 
   <footer class="footer">
