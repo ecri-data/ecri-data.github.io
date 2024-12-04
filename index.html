@@ -193,117 +193,113 @@
   </section>
 
 
-    <section class="section">
-    <div class="container">
+<section class="section">
+        <div class="container">
+            <!-- Dataset Section -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-two-thirds">
+                    <h2 class="title is-3">Dataset</h2>
+                    <div class="content has-text-justified">
+                        <p>The ECRI dataset is a longitudinal dataset specifically designed for modeling and predicting future reading performance in early childhood education. The dataset includes:</p>
+                        <ul>
+                            <li><strong>Demographic Data</strong>: Includes student-level information such as special education status, gender, and age.</li>
+                            <li><strong>Assessment Data</strong>: Includes various reading assessments, such as Dynamic Indicators of Basic Early Literacy Skills (DIBELS), Stanford Achievement Test, and Woodcock Reading Mastery Test.</li>
+                            <li><strong>Intervention Data</strong>: Records the intervention provided to students identified as at-risk for reading difficulties.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Dataset -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-two-thirds">
-          <h2 class="title is-3">Dataset</h2>
-          <div class="content has-text-justified">
-            <p>The ECRI dataset is a longitudinal dataset specifically designed for modeling and predicting future reading performance in early childhood education. The dataset includes:</p>
-              <ul>
-                  <li><strong>Demographic Data</strong>: Includes student-level information such as special education status, gender, and age.</li>
-                  <li><strong>Assessment Data</strong>: Includes various reading assessments, such as Dynamic Indicators of Basic Early Literacy Skills (DIBELS), Stanford Achievement Test, and Woodcock Reading Mastery Test.</li>
-                  <li><strong>Intervention Data</strong>: Records the intervention provided to students identified as at-risk for reading difficulties.</li>
-              </ul>
+            <!-- Visualization Section -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-two-thirds">
+                    <div class="column">
+                        <img src="./resources/school-level-fe.png" style="width:100%;" alt="School-level Features Visualization" />
+                        <p>Visualization of School-level Features. Left: the percentage of schools providing free or reduced-price lunch. Right: student demographics, averaged over schools.</p>
+                    </div>
+                </div>
+            </div>
 
-    <section class="section">
-    <div class="container">
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-thirds">
-          <div class="column">
-            <img src="./resources/school-level-fe.png" width="150%" />
-            <p>Visulization of School-level Features. Left: the percentage of schools providing free or reduced-price lunch. Right: student demographics, averaged over schools.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-
-      
+            <!-- Parameters Table -->
             <div class="container">
-        <table>
-        <thead>
-            <tr>
-                <th>Parameter</th>
-                <th>Definition</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>Gender</code></td>
-                <td>Indicates the gender of student.</td>
-            </tr>
-            <tr>
-                <td><code>Tx</code></td>
-                <td>Binary variable indicating if the student is in control or intervention group.</td>
-            </tr>
-            <tr>
-                <td><code>Age1b</code></td>
-                <td>Age of student.</td>
-            </tr>
-            <tr>
-                <td><code>Tier2_N</code></td>
-                <td>Number of at-risk readers in class.</td>
-            </tr>
-            <tr>
-                <td><code>grp_rate</code></td>
-                <td>Rate of group practice.</td>
-            </tr>
-            <tr>
-                <td><code>rcmistot</code></td>
-                <td>Total score of Ratings of Classroom Management and Instructional Support.</td>
-            </tr>
-            <tr>
-                <td><code>gnrl_fid</code></td>
-                <td>Fidelity of implementation.</td>
-            </tr>
-            <tr>
-                <td><code>TKPctCrt</code></td>
-                <td>Percentage answered correctly in Teacher Knowledge Survey.</td>
-            </tr>
-            <tr>
-                <td><code>NWFcls</code></td>
-                <td>Score for correct letter sounds for Nonsense Word Fluency measure.</td>
-            </tr>
-            <tr>
-                <td><code>NWFwrc</code></td>
-                <td>Score for words recoded completely and correctly for Nonsense Word Fluency measure.</td>
-            </tr>
-            <tr>
-                <td><code>ORFwc</code></td>
-                <td>Number of words read correctly in one minute for Oral Reading Fluency measure.</td>
-            </tr>
-            <tr>
-                <td><code>SAwrS</code></td>
-                <td>Word reading score for Stanford Achievement Test.</td>
-            </tr>
-            <tr>
-                <td><code>SAsrS</code></td>
-                <td>Sentence reading score for Stanford Achievement Test.</td>
-            </tr>
-            <tr>
-                <td><code>SAtoS</code></td>
-                <td>Total reading score for Stanford Achievement Test.</td>
-            </tr>
-            <tr>
-                <td><code>RMwidRS</code></td>
-                <td>Score on Word Identification for Woodcock Reading Mastery Test.</td>
-            </tr>
-            <tr>
-                <td><code>RMwdaRS</code></td>
-                <td>Score on Word Attack for Woodcock Reading Mastery Test.</td>
-            </tr>
-        </tbody>
-    </table>
-          </div>
+                <h3 class="title is-4">Parameter Definition</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Definition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>Gender</code></td>
+                            <td>Indicates the gender of student.</td>
+                        </tr>
+                        <tr>
+                            <td><code>Tx</code></td>
+                            <td>Binary variable indicating if the student is in control or intervention group.</td>
+                        </tr>
+                        <tr>
+                            <td><code>Age1b</code></td>
+                            <td>Age of student.</td>
+                        </tr>
+                        <tr>
+                            <td><code>Tier2_N</code></td>
+                            <td>Number of at-risk readers in class.</td>
+                        </tr>
+                        <tr>
+                            <td><code>grp_rate</code></td>
+                            <td>Rate of group practice.</td>
+                        </tr>
+                        <tr>
+                            <td><code>rcmistot</code></td>
+                            <td>Total score of Ratings of Classroom Management and Instructional Support.</td>
+                        </tr>
+                        <tr>
+                            <td><code>gnrl_fid</code></td>
+                            <td>Fidelity of implementation.</td>
+                        </tr>
+                        <tr>
+                            <td><code>TKPctCrt</code></td>
+                            <td>Percentage answered correctly in Teacher Knowledge Survey.</td>
+                        </tr>
+                        <tr>
+                            <td><code>NWFcls</code></td>
+                            <td>Score for correct letter sounds for Nonsense Word Fluency measure.</td>
+                        </tr>
+                        <tr>
+                            <td><code>NWFwrc</code></td>
+                            <td>Score for words recoded completely and correctly for Nonsense Word Fluency measure.</td>
+                        </tr>
+                        <tr>
+                            <td><code>ORFwc</code></td>
+                            <td>Number of words read correctly in one minute for Oral Reading Fluency measure.</td>
+                        </tr>
+                        <tr>
+                            <td><code>SAwrS</code></td>
+                            <td>Word reading score for Stanford Achievement Test.</td>
+                        </tr>
+                        <tr>
+                            <td><code>SAsrS</code></td>
+                            <td>Sentence reading score for Stanford Achievement Test.</td>
+                        </tr>
+                        <tr>
+                            <td><code>SAtoS</code></td>
+                            <td>Total reading score for Stanford Achievement Test.</td>
+                        </tr>
+                        <tr>
+                            <td><code>RMwidRS</code></td>
+                            <td>Score on Word Identification for Woodcock Reading Mastery Test.</td>
+                        </tr>
+                        <tr>
+                            <td><code>RMwdaRS</code></td>
+                            <td>Score on Word Attack for Woodcock Reading Mastery Test.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-  </section>
+    </section>
 
     <section class="section">
     <div class="container">
