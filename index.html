@@ -58,6 +58,20 @@
         font-weight: bold; /* Make the title bold */
         margin-bottom: 5px; /* Add space between the title and the box */
     }
+    table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      table, th, td {
+          border: 1px solid black;
+      }
+      th, td {
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
 
     </style>
   
@@ -208,6 +222,80 @@
                   <li><strong>Assessment Data</strong>: Includes various reading assessments, such as Dynamic Indicators of Basic Early Literacy Skills (DIBELS), Stanford Achievement Test, and Woodcock Reading Mastery Test.</li>
                   <li><strong>Intervention Data</strong>: Records the intervention provided to students identified as at-risk for reading difficulties.</li>
               </ul>
+            <table>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>Gender</code></td>
+                <td>Indicates the gender of student.</td>
+            </tr>
+            <tr>
+                <td><code>Tx</code></td>
+                <td>Binary variable indicating if the student is in control or intervention group.</td>
+            </tr>
+            <tr>
+                <td><code>Age1b</code></td>
+                <td>Age of student.</td>
+            </tr>
+            <tr>
+                <td><code>Tier2_N</code></td>
+                <td>Number of at-risk readers in class.</td>
+            </tr>
+            <tr>
+                <td><code>grp_rate</code></td>
+                <td>Rate of group practice.</td>
+            </tr>
+            <tr>
+                <td><code>rcmistot</code></td>
+                <td>Total score of Ratings of Classroom Management and Instructional Support.</td>
+            </tr>
+            <tr>
+                <td><code>gnrl_fid</code></td>
+                <td>Fidelity of implementation.</td>
+            </tr>
+            <tr>
+                <td><code>TKPctCrt</code></td>
+                <td>Percentage answered correctly in Teacher Knowledge Survey.</td>
+            </tr>
+            <tr>
+                <td><code>NWFcls</code></td>
+                <td>Score for correct letter sounds for Nonsense Word Fluency measure.</td>
+            </tr>
+            <tr>
+                <td><code>NWFwrc</code></td>
+                <td>Score for words recoded completely and correctly for Nonsense Word Fluency measure.</td>
+            </tr>
+            <tr>
+                <td><code>ORFwc</code></td>
+                <td>Number of words read correctly in one minute for Oral Reading Fluency measure.</td>
+            </tr>
+            <tr>
+                <td><code>SAwrS</code></td>
+                <td>Word reading score for Stanford Achievement Test.</td>
+            </tr>
+            <tr>
+                <td><code>SAsrS</code></td>
+                <td>Sentence reading score for Stanford Achievement Test.</td>
+            </tr>
+            <tr>
+                <td><code>SAtoS</code></td>
+                <td>Total reading score for Stanford Achievement Test.</td>
+            </tr>
+            <tr>
+                <td><code>RMwidRS</code></td>
+                <td>Score on Word Identification for Woodcock Reading Mastery Test.</td>
+            </tr>
+            <tr>
+                <td><code>RMwdaRS</code></td>
+                <td>Score on Word Attack for Woodcock Reading Mastery Test.</td>
+            </tr>
+        </tbody>
+    </table>
           </div>
         </div>
       </div>
